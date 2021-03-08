@@ -1,0 +1,10 @@
+Jika terdapat error pada saat pengumploadan File Coding ke Hard-ware
+seperti [error 13] atau masalah pada ttyUSB0/ttyACM0 nya, maka gunakan cara ini pada terminal :
+
+$ sudo usermod -a -G dialout 'nama user'
+$ sudo chmod a+rw /dev/ttyUSB0 (jika menggunakan USB)
+
+atau
+
+$ sudo usermod -a -G dialout 'nama user'
+$ sudo chmod a+rw /dev/ttyACM0 (jika menggunakan ACM/kabel warna biru bonusan dari arduino)
